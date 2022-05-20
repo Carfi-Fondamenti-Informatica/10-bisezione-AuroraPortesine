@@ -22,7 +22,7 @@ int main() {
         cout << "inserire estremi" << endl;
         cin >> a;
         cin >> b;
-    }while(g(a,b)==1);
+    }while(g(a,b));
     do{
         x=(a+b)/2;
         if(f(x)==0){
