@@ -4,7 +4,7 @@ using namespace std;
 
 float f (float y){
     float f;
-    f = ((y*y)*cos(y))+1;
+    f = (y*y*cos(y))+1;
     return f;
 }
 
