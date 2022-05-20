@@ -23,16 +23,18 @@ int main() {
         cin >> a;
         cin >> b;
     }while(g(a,b)==1);
-    a=(a+b)/2;
-    if(f(a)==0.0){
-        cout << int(x * 10000) / 10000.0 << endl;
-    }else{
-        if(f(a)*f(b)<0){
-            a=x;
+    do{
+        x=(a+b)/2;
+        if(f(x)==0){
+            cout << int(x * 10000) / 10000.0 << endl;
         }else{
-            b=x;
+            if(f(a)*f(b)<0){
+                b=x;
+            }else{
+                a=x;
+            }
+            err=abs(b-a)/2;
         }
-        err=abs(b-a)/2;
     }while(err>=1e-6);
     cout << int(x * 10000) / 10000.0 << endl;
     return 0;
