@@ -28,7 +28,7 @@ int main() {
         if(f(x)==0){
             cout << int(x * 10000) / 10000.0 << endl;
         }else{
-            if(f(a)*f(b)<0){
+            if(f(a)*f(x)<0){
                 b=x;
             }else{
                 a=x;
